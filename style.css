@@ -1,7 +1,7 @@
 /*
-Theme Name:   	Storefront Child Theme
-Theme URI:    	https://github.com/stuartduff/storefront-child-theme
-Author:       	Stuart Duff
+Theme Name:     Storefront Child Theme
+Theme URI:      https://github.com/stuartduff/storefront-child-theme
+Author:         Stuart Duff
 Author URI:     http://stuartduff.com
 Template:     	storefront
 Description:  	This is a blank child theme for WooThemes StoreFront theme
@@ -22,3 +22,267 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Oswald:700");
+body {
+  font-family: 'Merriweather', serif; }
+
+.site-title, h1, h2, h2 > a, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-variant: small-caps; }
+
+.site-description {
+  font-family: 'Merriweather', serif;
+  font-weight: 700; }
+
+.storefront-breadcrumb {
+  display: none; }
+
+.entry-title {
+  margin-top: 2em; }
+
+.home-event-tile {
+  min-height: 400px;
+  padding: 2em; }
+
+.home-event-tile-artists, .home-event-tile-description, .home-event-tile-hosts {
+  color: white;
+  margin-bottom: 0; }
+
+.home-event-tile-button {
+  background-color: #000;
+  padding: 0.5em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 1em;
+  transition: all 0.2s ease-in-out; }
+
+.home-event-tile-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+
+.home-event-tile__jan-2018 {
+  background-color: #ff0700; }
+
+.home-event-tile__feb-2018 {
+  background-color: #ff0700; }
+
+.home-event-tile__apr-2018 {
+  background-image: linear-gradient(to right top, #ff0700, #f20700, #e50700, #d90700, #cc0700); }
+
+.posted-on, .widget_product_search, .woocommerce-breadcrumb {
+  display: none; }
+
+.content-area {
+  padding-top: 2em; }
+
+.current-menu-item > a {
+  border-bottom: solid #ff0700 3px;
+  color: #ff0700 !important;
+  font-weight: bold; }
+
+h2 > a {
+  color: #222; }
+
+h2 > a:hover {
+  text-decoration: underline; }
+
+.button {
+  background-color: #ee7c16 !important;
+  color: #331a05 !important;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-family: Oswald; }
+
+.qsot-event-area-ticket-selection .title-wrap h3 {
+  display: none; }
+
+.qsot-event-area-ticket-selection .title-wrap:after {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: bold;
+  font-size: 1.5em;
+  content: "STEP 1: HOW MANY TICKETS?"; }
+
+.site-branding {
+  max-width: 68%; }
+
+.menu-toggle {
+  float: right; }
+
+.button:hover {
+  background-color: #ee7c16 !important;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+
+.entry-content {
+  max-width: 46em; }
+
+img.event-performer {
+  float: right;
+  margin-left: 1em;
+  width: 12em;
+  position: relative;
+  border-radius: 50%;
+  -webkit-shape-outside: circle(50%);
+          shape-outside: circle(50%);
+  margin-left: 0.8em; }
+
+img.event-performer-small {
+  border-radius: 50%;
+  display: block;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  max-width: 25%; }
+
+.event-performer-group {
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row; }
+
+.event-performer-card {
+  clear: both;
+  padding-bottom: 2em; }
+
+strong, .event-performer-name {
+  /* text-transform: uppercase;
+     */
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.4em;
+  font-family: Oswald;
+  font-weight: bold;
+  color: #333; }
+
+.qsot-event-area-ticket-selection .helper {
+  display: none; }
+
+.above-fold-message {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 1.5em;
+  /* border-bottom: solid 1px #eee; */
+  margin-bottom: 1em; }
+
+.above-fold-message > a {
+  font-family: Oswald;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ee7c16;
+  padding: 0.5em;
+  margin-left: 0.5em; }
+
+.qsot-event-template-default > #page > #content:before {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 355px;
+  background-color: #000;
+  background-image: url(https://berlinoffensive.com/wp-content/uploads/2018/01/event_background.jpg);
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+#post-164 .entry-title,
+#post-164 .above-fold-message,
+#post-166 .entry-title,
+#post-166 .above-fold-message,
+#post-608 .entry-title,
+#post-608 .above-fold-message,
+#post-648 .entry-title,
+#post-648 .above-fold-message {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+.group-discount > h2 {
+  font-size: 1.2rem; }
+
+.discount-code {
+  font-family: monospace, monospace;
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  font-weight: bold;
+  color: #ff0700;
+  font-family: monospace, monospace; }
+
+@media screen and (max-width: 600px) {
+  .home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header {
+    margin-bottom: 0; }
+  .entry-title {
+    font-size: 26px; }
+  .qsot-event-template-default > #page > #content:before {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 250px;
+    background-color: #000;
+    background-image: url(https://berlinoffensive.com/wp-content/uploads/2018/01/event_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; } }
+
+@media screen and (max-width: 455px) {
+  .home-event-tile {
+    min-height: 550px; }
+  .site-branding {
+    max-width: 7rem; }
+  .site-branding .site-title {
+    font-size: 1.2em;
+    line-height: 1.1em; }
+  .home-event-tile-button {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    position: relative; }
+  .home-event-tile {
+    min-height: 400px;
+    padding: 2em; }
+  .home-event-tile-title {
+    font-size: 1.5em; }
+  .button {
+    margin-top: 0.5em;
+    width: 100%; }
+  img.event-performer {
+    float: none;
+    margin: 0 auto 1em;
+    width: 66%;
+    border-radius: 50%;
+    position: relative; }
+  .qsot-event-template-default > #page > #content:before {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 285px;
+    background-size: cover; }
+  .above-fold-message {
+    clear: both;
+    line-height: 2.5em; }
+  .above-fold-message > a {
+    font-family: Oswald;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important; } }
+
+.above-fold-message {
+  padding-bottom: 3em; }
+
+@media screen and (min-width: 445px) and (max-width: 600px) {
+  #post-166 {
+    padding-top: 5em; } }
