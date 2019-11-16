@@ -102,6 +102,21 @@ h6 {
   margin-top: 2em;
 }
 
+.home-events {
+  background-color: #ff0700;
+}
+
+.home-events:first-child {
+  background-image: linear-gradient(
+    to right top,
+    #ff0700,
+    #f20700,
+    #e50700,
+    #d90700,
+    #cc0700
+  );
+}
+
 .home-event-tile {
   min-height: 400px;
   padding: 2em;
@@ -132,29 +147,8 @@ h6 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.home-event-tile__jan-2018 {
-  background-color: #ff0700;
-}
-
-.home-event-tile__feb-2018 {
-  background-color: #ff0700;
-}
-
-.home-event-tile__mar-2018 {
-}
-
-.home-event-tile__apr-2018 {
-  background-image: linear-gradient(
-    to right top,
-    #ff0700,
-    #f20700,
-    #e50700,
-    #d90700,
-    #cc0700
-  );
-}
-
 .posted-on,
+.post-author,
 .widget_product_search,
 .woocommerce-breadcrumb {
   display: none;
